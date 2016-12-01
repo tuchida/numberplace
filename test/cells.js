@@ -57,42 +57,42 @@ describe('Cells', () => {
     });
   });
 
-  describe('block', () => {
+  describe('square', () => {
     describe('9 * 6', () => {
       var cells = new Cells(9, 6);
       it('(0, 0)', () => {
         var index = 0 * 9 + 0;
-        assert.deepEqual([...cells.block(index)], [0, 1, 2, 9, 10, 11, 18, 19, 20]);
+        assert.deepEqual([...cells.square(index)], [0, 1, 2, 9, 10, 11, 18, 19, 20]);
       });
       it('(1, 1)', () => {
         var index = 1 * 9 + 1;
-        assert.deepEqual([...cells.block(index)], [0, 1, 2, 9, 10, 11, 18, 19, 20]);
+        assert.deepEqual([...cells.square(index)], [0, 1, 2, 9, 10, 11, 18, 19, 20]);
       });
       it('(4, 4)', () => {
         var index = 4 * 9 + 4;
-        assert.deepEqual([...cells.block(index)], [30, 31, 32, 39, 40, 41, 48, 49, 50]);
+        assert.deepEqual([...cells.square(index)], [30, 31, 32, 39, 40, 41, 48, 49, 50]);
       });
     });
     describe('6 * 9', () => {
       var cells = new Cells(6, 9);
       it('(0, 0)', () => {
         var index = 0 * 6 + 0;
-        assert.deepEqual([...cells.block(index)], [0, 1, 2, 6, 7, 8, 12, 13, 14]);
+        assert.deepEqual([...cells.square(index)], [0, 1, 2, 6, 7, 8, 12, 13, 14]);
       });
       it('(1, 1)', () => {
         var index = 1 * 6 + 1;
-        assert.deepEqual([...cells.block(index)], [0, 1, 2, 6, 7, 8, 12, 13, 14]);
+        assert.deepEqual([...cells.square(index)], [0, 1, 2, 6, 7, 8, 12, 13, 14]);
       });
       it('(4, 4)', () => {
         var index = 4 * 6 + 4;
-        assert.deepEqual([...cells.block(index)], [21, 22, 23, 27, 28, 29, 33, 34, 35]);
+        assert.deepEqual([...cells.square(index)], [21, 22, 23, 27, 28, 29, 33, 34, 35]);
       });
     });
     describe('9 * 9', () => {
       var cells = new Cells(9, 9);
       it('(4, 0)', () => {
         var index = 0 * 6 + 4;
-        assert.deepEqual([...cells.block(index)], [3, 4, 5, 12, 13, 14, 21, 22, 23]);
+        assert.deepEqual([...cells.square(index)], [3, 4, 5, 12, 13, 14, 21, 22, 23]);
       });
     });
   });
