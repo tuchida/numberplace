@@ -1,4 +1,4 @@
-const resolve = require('./lib/resolver');
+const { resolve } = require('./lib/resolver');
 const io = require('./lib/io');
 const fs = require('fs');
 
